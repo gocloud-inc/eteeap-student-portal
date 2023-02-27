@@ -1,0 +1,22 @@
+.list-group { 
+    .list-group-item.active {
+        font-weight: 600;
+        background: rgba(var(--color-dark-rgb), 0.07) !important;
+        color: var(--color-dark);
+        
+        .bx, span {
+            color: var(--color-dark);
+        }
+    }
+    
+    .list-group-item {
+        padding: 6px 8px;
+        background: transparent;
+        border-color: rgba(var(--color-dark-rgb), 0.1);
+        color: var(--color-dark);
+
+        &:hover {
+            background: rgba(var(--color-medium-rgb), 0.1);
+        }
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - ETEEAP | New Era University</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <button type="button" class="button-link-dark circle" id="sidebar-toggler">
+                    <span class="material-icons-outlined">menu</span>
+                </button>
+                <a href="index.html" class="d-flex align-items-center gap-2" id="school-logo">
+                    <img class="brand-logo" src="assets/logo/neu-logo.png" alt="">
+                    <div class="font-size-16 font-weight-600">New Era University</div>
+                </a>
+                <ul class="navmenu">
+                    <li class="nav-item dropdown">
+                        <a role="button" class="d-flex align-items-center gap-2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="initial-circle-xs background-color-warning">J</div>
+                            <div class="font-size-14 font-weight-600 nav-username">Jhoaquin James S. Abad</div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="profile.html"><span class="material-icons-outlined">account_circle</span> Profile</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-icons-outlined">contact_support</span>Contact Support</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-icons-outlined">logout</span>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside id="aside">
+            <ul class="side-menu">
+                <li class="side-item">
+                    <div class="d-flex align-items-center background-accent-warning rounded-4 gap-3 p-2">
+                        <div class="initial-circle-sm rounded-4 background-color-warning">
+                            <span class="material-icons-outlined">pending</span>
+                        </div>
+                        <div class="me-auto">
+                            <div class="font-size-14 font-weight-600">For Assessment</div>
+                            <div class="font-size-12">Enrollment Status</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="side-item-header">Menu</li>
+                <li class="side-item">
+                    <a class="side-link active" href="index.html">
+                        <span class="material-icons-outlined">dashboard</span>
+                        <span class="side-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="profile.html">
+                        <span class="material-icons-outlined">person</span>
+                        <span class="side-text">My Information</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="portfolio.html">
+                        <span class="material-icons-outlined">school</span>
+                        <span class="side-text">Portfolio</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="fees-payment-records.html">
+                        <span class="material-icons-outlined">receipt</span>
+                        <span class="side-text">Fees/Payment Records</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="student-enrollment-load.html">
+                        <span class="material-icons-outlined">grade</span>
+                        <span class="side-text">Student Enrollment Load</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="subject-mapping.html">
+                        <span class="material-icons-outlined">subject</span>
+                        <span class="side-text">Subject Mapping</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="referral-form.html">
+                        <span class="material-icons-outlined">history_edu</span>
+                        <span class="side-text">Referral Form</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="container">
+                <div class="bread">
+                    <ol class="bread-menu">
+                        <li class="bread-item">
+                            <a href="index.html" class="bread-link">Dashboard</a>
+                        </li>
+                        <li class="bread-item">
+                            <a href="#" class="bread-link" aria-current="page">Boarding</a>
+                        </li>
+                    </ol>
+                    <h4>Hi, Jhoaquin James S. Abad!</h4>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

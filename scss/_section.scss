@@ -1,0 +1,12 @@
+section {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+@include sm {
+    .left-wrapper, .right-wrapper {
+        display: none;
+    }
+}

@@ -1,0 +1,38 @@
+th {
+    font-weight: bold;
+}
+
+td, th {
+    color: var(--color-dark);
+    vertical-align: middle;
+}
+
+th {
+    font-size: 12px;
+}
+
+td {
+    font-size: 12px;
+}
+
+
+.table-responsive {
+    position: relative;
+    overflow-x: initial;
+
+    @media (max-width: 1400px) {
+        overflow-x: auto;
+    }
+
+    @media (max-width: 768px) {
+        overflow-x: auto;
+    }
+
+    @media (max-width: 567px) {
+        overflow-x: auto;
+    }
+}
+
+.table-highlighted {
+    background: rgba(var(--color-primary-rgb), 0.1);
+}

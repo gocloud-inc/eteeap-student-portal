@@ -1,0 +1,152 @@
+// Maps: Theme Colors
+$theme-colors: (
+    "primary":      var(--color-primary),
+    "secondary":    var(--color-secondary),
+    "tertiary":     var(--color-tertiary),
+    "success":      var(--color-success),
+    "warning":      var(--color-warning),
+    "danger":       var(--color-danger),
+    "light":        var(--color-light),
+    "medium":       var(--color-medium),
+    "dark":         var(--color-dark)
+) !default;
+
+%button-defaults {
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    gap: 0.3rem;
+    padding: 8px 14px;
+    border-radius: 6px;
+    max-height: 40px;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+// Default 
+
+@each $color, $value in $theme-colors {
+    .button-#{$color} {
+        @extend %button-defaults;
+        background: $value;
+        color: var(--color-#{$color}-contrast) !important;
+
+        &:hover {
+            background: var(--color-#{$color}-tint);
+        }
+
+        i, span {
+            font-size: 21px;
+            color: var(--color-#{$color}-contrast);
+        }
+    }
+
+    .button-accent-#{$color} {
+        @extend %button-defaults;
+        background: rgba(var(--color-#{$color}-rgb), 0.2);
+
+        &:hover {
+            background: rgba(var(--color-#{$color}-rgb), 0.15);
+        }
+
+        i, span {
+            font-size: 21px;
+            color: var(--color-#{$color}-shade);
+        }
+    }
+
+    .button-outline-#{$color} {
+        @extend %button-defaults;
+        background: none;
+        border: 1px solid rgba(var(--color-#{$color}-rgb), 0.2);
+        color: var(--color-#{$color});
+
+        &:hover {
+            background: rgba(var(--color-#{$color}-rgb), 0.1);
+        }
+
+        i, span {
+            font-size: 21px;
+        }
+    }
+
+    .button-link-#{$color} {
+        @extend %button-defaults;
+        background: none;
+        border: none;
+        color: var(--color-#{$color});
+
+        &:hover {
+            background: rgba(var(--color-#{$color}-rgb), 0.05);
+        }
+
+        i, span {
+            font-size: 22px !important;
+            color: rgba(var(--color-#{$color}-rgb), 0.8);
+        }
+
+        img {
+            width: 40px;
+        }
+    }
+}
+
+// Shape
+
+.round {
+    border-radius: 24px !important;
+}
+
+.circle {
+    border-radius: 50%;
+    padding: 16px;
+    height: 40px;
+    width: 40px;
+
+    i {
+        font-size: 21px;
+    }
+}
+
+// Sizing
+
+.xl {
+    padding: 32px;
+    font-size: 24px;
+}
+
+.lg {
+    padding: 26px;
+    font-size: 18px;
+}
+
+.md {
+    padding: 24px;
+    font-size: 16px;
+}
+
+.sm > i {
+    padding: 10px;
+    font-size: 16px !important;
+}
+
+.xs {
+    padding: 8px;
+    font-size: 10px;
+}
+
+// Block
+
+.block {
+    width: 100%;
+}

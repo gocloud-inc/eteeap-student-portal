@@ -1,0 +1,35 @@
+// Empty State
+.empty-state-relative {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+    .empty-state-relative-icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: rgba(var(--color-dark-rgb), 0.05);
+
+        .empty-state-relative-icon {
+            font-size: 132px;
+            color: var(--color-medium-shade);
+        }
+    }
+
+    .empty-state-relative-text {
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 1.75;
+        margin-top: 24px;
+    }
+
+    .button {
+        margin-top: 32px;
+    }
+}
