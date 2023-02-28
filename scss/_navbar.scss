@@ -118,7 +118,7 @@ header {
 }
 
 .nav {
-    background: var(--color-card);
+    background: rgba(var(--color-dark-rgb), 0.05);
     backdrop-filter: blur(5px);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
     padding: 4px;
@@ -128,8 +128,8 @@ header {
 
     .nav-item {
         .nav-link.active {
-            background: var(--color-primary);
-            color: var(--color-primary-contrast);
+            background: var(--color-dark);
+            color: var(--color-dark-contrast);
         }
 
         .nav-link {
