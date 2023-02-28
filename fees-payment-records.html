@@ -120,152 +120,96 @@
 
                 <div class="row g-4 mt-1">
                     <div class="col-xl-12">
-                        <div class="font-size-18 font-weight-600 mb-3">Payment Plan - Installment</div>
-                        <div class="card shadow-sm">
-                            <div class="body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th>Divisions</th>
-                                                <th>Amortization</th>
-                                                <th>Applied</th>
-                                                <th>Balance</th>
-                                                <th>Due Date</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Downpayment</td>
-                                                <td class="text-color-primary font-weight-600">3,000.00</td>
-                                                <td class="font-weight-600">3,000.00</td>
-                                                <td class="font-weight-600">0.00</td>
-                                                <td>Upon Registration</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Prelims</td>
-                                                <td class="text-color-primary font-weight-600">5,139.03</td>
-                                                <td class="font-weight-600">5,000.00</td>
-                                                <td class="text-color-danger font-weight-600">139.03</td>
-                                                <td>-</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Midterms</td>
-                                                <td class="text-color-primary font-weight-600">5,139.03</td>
-                                                <td class="font-weight-600">0.00</td>
-                                                <td class="text-color-danger font-weight-600">5,139.03</td>
-                                                <td>-</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Finals</td>
-                                                <td class="text-color-primary font-weight-600">5,139.03</td>
-                                                <td class="font-weight-600">0.00</td>
-                                                <td class="text-color-danger font-weight-600">5,139.03</td>
-                                                <td>-</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="nav nav-pills round gap-2" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link round active" id="pills-fees-tab" data-bs-toggle="pill" data-bs-target="#pills-fees" type="button" role="tab" aria-controls="pills-fees" aria-selected="true">Fees</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link round" id="pills-payment-records-tab" data-bs-toggle="pill" data-bs-target="#pills-payment-records" type="button" role="tab" aria-controls="pills-payment-records" aria-selected="false">Payment Records</button>
+                            </li>
+                        </ul>
                     </div>
                     <div class="col-xl-12">
-                        <div class="font-size-18 font-weight-600 mb-3">Fees</div>
-                        <div class="background-color-card py-3 px-3 rounded-3 shadow-sm">
-                            <div class="row g-3">
-                                <div class="col-xl-12">
-                                    <div class="d-flex align-items-center justify-content-between gap-2">
-                                        <div class="font-size-14">Tuition Fee (25.00 x 558.00)</div>
-                                        <div class="font-size-14 font-weight-500">₱13,950.00</div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12">
-                                    <div class="d-flex align-items-center justify-content-between gap-2">
-                                        <div class="font-size-14">Miscellaneous Fee</div>
-                                        <div class="font-size-14 font-weight-500">₱1,250.00</div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12">
-                                    <div class="d-flex align-items-center justify-content-between gap-2">
-                                        <div class="font-size-14">Other Fee</div>
-                                        <div class="font-size-14 font-weight-500">₱3,217.1</div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12">
-                                    <div class="d-flex align-items-center justify-content-between gap-2">
-                                        <div class="font-size-16 font-weight-600">Total Tuition Fees</div>
-                                        <div class="badge background-accent-danger round font-size-20 font-weight-600">₱18,417.1</div>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-fees" role="tabpanel" aria-labelledby="pills-fees-tab" tabindex="0">
+                                <div class="row g-3">
+                                    <div class="col-xl-12">
+                                        <div class="font-size-18 font-weight-600 mb-3">Enrollment Fees</div>
+                                        <div class="background-color-card py-3 px-3 rounded-3 shadow-sm solid-border">
+                                            <div class="row g-3">
+                                                <div class="col-xl-12">
+                                                    <div class="d-flex align-items-center justify-content-between gap-2">
+                                                        <div class="font-size-14">Portal Fee</div>
+                                                        <div class="font-size-14 font-weight-500">PHP 3,750.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <div class="d-flex align-items-center justify-content-between gap-2">
+                                                        <div class="font-size-14">Initial Assessment Fee</div>
+                                                        <div class="font-size-14 font-weight-500">PHP 10,000.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <div class="d-flex align-items-center justify-content-between gap-2">
+                                                        <div class="font-size-14">Tuition Fee</div>
+                                                        <div class="font-size-14 font-weight-500">PHP 690.00 / Unit</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <div class="d-flex align-items-center justify-content-between gap-2">
+                                                        <div class="font-size-14">Tutorial Fee</div>
+                                                        <div class="font-size-14 font-weight-500">PHP 5,000.00 / Course</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <div class="d-flex align-items-center justify-content-between gap-2">
+                                                        <div class="font-size-14">Accreditation Fee</div>
+                                                        <div class="font-size-14 font-weight-500">PHP 500.00 / Course</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <div class="d-flex align-items-center justify-content-between gap-2">
+                                                        <div class="font-size-16 font-weight-600">Total Fees</div>
+                                                        <div class="badge background-accent-danger round font-size-20 font-weight-600">PHP 19,940.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="font-size-18 font-weight-600 mb-3">Deductions</div>
-                        <div class="background-color-card py-3 px-3 rounded-3 shadow-sm">
-                            <div class="row g-3">
-                                <div class="col-xl-12">
-                                    <div class="d-flex align-items-center justify-content-between gap-2">
-                                        <div class="font-size-14">Deductions</div>
-                                        <div class="font-size-14 font-weight-500">-₱0.00</div>
+
+                            <div class="tab-pane fade" id="pills-payment-records" role="tabpanel" aria-labelledby="pills-payment-records-tab" tabindex="0">
+                                <div class="row g-3">
+                                    <div class="col-xl-12">
+                                        <div class="font-size-18 font-weight-600 mb-3">Payment History</div>
+                                        <div class="card shadow-sm">
+                                            <div class="body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Provider</th>
+                                                                <th>Payment For</th>
+                                                                <th>Amount</th>
+                                                                <th>Status</th>
+                                                                <th>Transaction Date</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Pesopay</td>
+                                                                <td>Enrollment Application</td>
+                                                                <td class="text-color-primary font-weight-600">10,000.00</td>
+                                                                <td class="text-color-success font-weight-600">Paid</td>
+                                                                <td>02-28-23</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-xl-12">
-                                    <div class="d-flex align-items-center justify-content-between gap-2">
-                                        <div class="font-size-14">Scholarships</div>
-                                        <div class="font-size-14 font-weight-500">-₱0.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="font-size-18 font-weight-600 mb-3">Account Summary</div>
-                        <div class="card shadown-sm">
-                            <div class="body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th>Fee Name</th>
-                                                <th>Amount</th>
-                                                <th>Paid</th>
-                                                <th>Balance</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Total Tuition Fees</td>
-                                                <td class="font-weight-600">₱18,417.10</td>
-                                                <td class="text-color-success font-weight-600">₱8,000.00 </td>
-                                                <td class="text-color-danger font-weight-600">₱10,417.10</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Total Deduction: (Deduction + Scholarship)</td>
-                                                <td class="text-color-medium font-weight-600">-</td>
-                                                <td class="text-color-medium font-weight-600">- ₱0.00 </td>
-                                                <td class="text-color-medium font-weight-600">₱10,417.10</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Over the Counter Fee</td>
-                                                <td class="font-weight-600">₱0.00</td>
-                                                <td class="text-color-success font-weight-600">₱0.00</td>
-                                                <td class="text-color-danger font-weight-600">₱0.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Special Subject Fee</td>
-                                                <td class="font-weight-600">₱0.00</td>
-                                                <td class="text-color-success font-weight-600">₱0.00</td>
-                                                <td class="text-color-danger font-weight-600">₱0.00</td>
-                                            </tr>
-                                            <tr class="background-accent-medium">
-                                                <td>Total Payables</td>
-                                                <td class="font-size-16 font-weight-600">₱18,417.10</td>
-                                                <td class="font-size-16 font-weight-600">₱8,000.00</td>
-                                                <td class="font-size-16 font-weight-600">₱10,417.10</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
                                 </div>
                             </div>
                         </div>
